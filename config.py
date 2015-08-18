@@ -20,3 +20,7 @@ class DevelopmentConfig(Config):
 
 class TestingConfig(Config):
     TESTING = True
+
+if __name__ == '__main__':
+    print('{0}: {1}'.format('APP_SETTINGS', os.environ['APP_SETTINGS']))
+    print('{0}: {1}'.format('DATABASE_URL', os.environ['DATABASE_URL']))
